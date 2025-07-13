@@ -1,12 +1,13 @@
-# missing_letters
+# Missing Letters 🅰️🅱️
 
-This module contains a Python function that returns the letters missing from the English alphabet in a given input string.
+This is a simple Python program that returns the letters missing from the English alphabet in a given input string.
 
-### Example
+## How it works
 
-```python
-from missing_letters.missing_letters import missing_letters
+The program asks the user to input a string and it then returns all the letters from the alphabet that are missing
+in the string.
 
-print(missing_letters('abcdf'))  # Output: 'eg...z'
-```
 
+## Example
+- INPUT:  'abcd'
+- OUTPUT: 'efg...z'
