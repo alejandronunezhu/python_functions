@@ -29,7 +29,6 @@ missing_letters_tests = [
     # case,         text,                           missing
     ['pangram',     PANGRAM,                        ''],
     ['no vowels',   'bcd fgh jklmn pqrst vwxyz',    'aeiou'],
-    # new tests:                     ''],
     ['no cdefg',    'abhijklmnopqrstyuvwxyz',       'cdefg'],
     ['no kmswz',    'abcdefghijlnopqrtyuvxy',       'kmswz']
 ]
