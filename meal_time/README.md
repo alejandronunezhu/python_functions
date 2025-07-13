@@ -13,5 +13,5 @@ time into a float (e.g., `7:30` becomes `7.5`) and tells the user if it’s:
 - **Fasting time** (any other time)
 
 ## Example
-INPUT:  12:30
-OUTPUT: lunch time
+- INPUT:  12:30
+- OUTPUT: lunch time
