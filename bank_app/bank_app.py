@@ -1,4 +1,4 @@
-class bankAccount:
+class BankAccount:
     def __init__(self, owner: str, balance: float = 0) -> None:
         self.owner = owner
         self.balance = balance
@@ -20,7 +20,7 @@ class bankAccount:
     def get_balance(self) -> float:
         return self.balance
 
-class savingsAccount(BankAccount):
+class SavingsAccount(BankAccount):
     def __init__(self, owner: str, balance: float = 0, interest_rate: float = 0.02) -> None:
         super().__init__(owner, balance)
         self.interest_rate = interest_rate
@@ -30,7 +30,7 @@ class savingsAccount(BankAccount):
         self.balance += interest
         print(f"Interest applied: ${interest:.2f}. New balance: ${self.balance:.2f}")
 
-class checkingAccount(BankAccount):
+class CheckingAccount(BankAccount):
     def __init__(self, owner: str, balance: float = 0, overdraft_limit: float = 100) -> None:
         super().__init__(owner, balance)
         self.overdraft_limit = overdraft_limit
