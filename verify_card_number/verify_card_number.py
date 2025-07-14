@@ -1,4 +1,4 @@
-def verify_card_number(card_number):
+def verify_card_number(card_number: str) -> bool:
     """Return True if card number is valid according to the Luhn algorithm."""
     sum_of_odd_digits = 0
     card_number_reversed = card_number[::-1]
@@ -17,7 +17,7 @@ def verify_card_number(card_number):
     total = sum_of_odd_digits + sum_of_even_digits
     return total % 10 == 0
 
-def main():
+def main() -> None:
     card_number = input("Enter credit card number (with or without spaces or dashes): ")
     card_translation = str.maketrans({'-': '', ' ': ''})
     translated_card_number = card_number.translate(card_translation)
@@ -34,7 +34,7 @@ def main():
 if __name__ == "__main__":
     main()
 
-#def test_verify_card_number():
+#def test_verify_card_number() -> None:
 #    tests = [
 #        ("Valid Visa", "4111 1111 1111 1111", True),
 #        ("Valid Mastercard", "5500-0000-0000-0004", True),
