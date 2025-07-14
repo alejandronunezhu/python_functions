@@ -15,4 +15,4 @@ The program:
 
 - How much was the meal? $50.00
 - What percentage would you like to tip? 20%
-- OUTPUT: $10.00
+- OUTPUT: Leave $10.00
