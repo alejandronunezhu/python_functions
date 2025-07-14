@@ -1,8 +1,8 @@
-def convert(time):
+def convert(time: str) -> float:
     hours, minutes = time.split(":")
     return int(hours) + int(minutes) / 60
 
-def main():
+def main() -> None:
     time = input("Time: ")
     total = convert(time)
 
