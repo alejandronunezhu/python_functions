@@ -1,4 +1,4 @@
-# 🏦 Simple Python Bank App
+# Simple Python Bank App 🏦
 
 This is a command-line banking application written in Python using OOP.
 
@@ -8,10 +8,10 @@ You can create either a **Savings Account** or **Checking Account**, deposit or 
 
 ## 🚀 Features
 
-- ✅ Base 'BankAccount' class
-- 🏦 'SavingsAccount' class with interest calculation
-- 💳 'CheckingAccount' class with overdraft protection
-- 🖥️ Text-based menu for user interaction
+- Base 'BankAccount' class
+- 'SavingsAccount' class with interest calculation
+- 'CheckingAccount' class with overdraft protection
+- Text-based menu for user interaction
 
 ---
 
