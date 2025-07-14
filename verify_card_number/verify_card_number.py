@@ -33,3 +33,17 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+#def test_verify_card_number():
+#    tests = [
+#        ("Valid Visa", "4111 1111 1111 1111", True),
+#        ("Valid Mastercard", "5500-0000-0000-0004", True),
+#        ("Invalid number", "1234 5678 9012 3456", False),
+#        ("Short number", "4111", False)
+#    ]
+#    for name, number, expected in tests:
+#        result = verify_card_number(number.replace(" ", "").replace("-", ""))
+#        print(f"{name}: {'PASS' if result == expected else 'FAIL'}")
+#
+## Run tests:
+#test_verify_card_number()
