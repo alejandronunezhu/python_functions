@@ -1,14 +1,14 @@
 class BankAccount:
-    def __init__(self, owner, balance=0):
+    def __init__(self, owner: str, balance: float = 0) -> None:
         self.owner = owner
         self.balance = balance
 
-    def deposit(self, amount):
+    def deposit(self, amount: float) -> float:
         self.balance += amount
         print(f"Deposited ${amount}. New balance: ${self.balance}")
         return self.balance
 
-    def withdraw(self, amount):
+    def withdraw(self, amount: float) -> float:
         if amount > self.balance:
             print("Insufficient funds.")
             print(f"Current balance: ${self.balance}")
@@ -17,25 +17,25 @@ class BankAccount:
         print(f"Withdrew ${amount}. New balance: ${self.balance}")
         return self.balance
 
-    def get_balance(self):
+    def get_balance(self) -> float:
         return self.balance
 
 class SavingsAccount(BankAccount):
-    def __init__(self, owner, balance=0, interest_rate=0.02):
+    def __init__(self, owner: str, balance: float = 0, interest_rate: float = 0.02) -> None:
         super().__init__(owner, balance)
         self.interest_rate = interest_rate
 
-    def apply_interest(self):
+    def apply_interest(self) -> None:
         interest = self.balance * self.interest_rate
         self.balance += interest
         print(f"Interest applied: ${interest:.2f}. New balance: ${self.balance:.2f}")
 
 class CheckingAccount(BankAccount):
-    def __init__(self, owner, balance=0, overdraft_limit=100):
+    def __init__(self, owner: str, balance: float = 0, overdraft_limit: float = 100) -> None:
         super().__init__(owner, balance)
         self.overdraft_limit = overdraft_limit
 
-    def withdraw(self, amount):
+    def withdraw(self, amount: float) -> float:
         if amount > self.balance + self.overdraft_limit:
             print("Overdraft limit exceeded.")
             return self.balance
@@ -44,7 +44,7 @@ class CheckingAccount(BankAccount):
         return self.balance
 
 
-def main():
+def main() -> None:
     print("Welcome to ANH Bank!")
     name = input("Enter your name: ")
 
